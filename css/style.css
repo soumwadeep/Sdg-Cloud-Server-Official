@@ -3,6 +3,12 @@ body {
   color: #0c0c0c;
   background-color: #ffffff;
 }
+.iconr
+{
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
 
 .layout_padding {
   padding-top: 90px;
