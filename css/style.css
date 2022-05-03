@@ -1,4 +1,9 @@
-body {
+html
+{
+  scroll-behavior: smooth;
+}
+body 
+{
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
@@ -9,7 +14,31 @@ body {
   height: 25px;
   text-align: center;
 }
-
+#icons
+{
+  font-size: 60px;
+  color: #582fd7;
+}
+#boxbg
+{
+  border-radius: 30px;
+  cursor: pointer;
+}
+#socialbox
+{
+  font-size: 30px;
+  color: #582fd7;
+}
+/* #icons:hover
+{
+  color: #582fd7;
+} */
+/* #iconsa
+{
+  color: #6944db;
+  font-size: 60px;
+  cursor: pointer;
+} */
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -633,6 +662,7 @@ a:focus {
           align-items: stretch;
   background-color: #ffffff;
   padding: 10px 20px;
+  border-radius: 10px;
 }
 
 .info_section .info_contact .img-box {
