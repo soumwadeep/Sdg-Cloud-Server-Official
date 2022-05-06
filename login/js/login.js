@@ -18,43 +18,19 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 
-// // Sign Up
-// signUp.addEventListener('click', (e) => {
+// Sign Up
+signUp.addEventListener('click', (e) => {
 
-//   //Add All The Input Field's ID
-//   var email = document.getElementById("email").value;
-//   var password = document.getElementById("password").value;
-  
-//   //Copy It From Docs
-//   createUserWithEmailAndPassword(auth, email, password)
-//     .then((userCredential) => {
-//     // Signed in 
-//     const user = userCredential.user;
-//     alert("Welcome: " + user.email + "! ToSdg Cloud Server.You Are Now Successfully Registered!");
-//     window.location.href = "dashboard/home.html";
-//     // ...
-//     })
-//     .catch((error) => {
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
-
-//   //add an alert for errors
-//   alert(errorMessage);
-
-//     // ..
-//     });
-// });
-  // Sign In
-signIn.addEventListener('click', (e) => {
-
+  //Add All The Input Field's ID
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
-
-  signInWithEmailAndPassword(auth, email, password)
+  
+  //Copy It From Docs
+  createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    alert("Welcome : " + user.email + "! Now You Can Access Our Files!");
+    alert("Welcome: " + user.email + "! To Sdg Cloud Server.Please Wait For Few Seconds While We Complete Your Registration!");
     window.location.href = "dashboard/home.html";
     // ...
     })
@@ -64,5 +40,29 @@ signIn.addEventListener('click', (e) => {
 
   //add an alert for errors
   alert(errorMessage);
+
+    // ..
     });
 });
+//   // Sign In
+// signIn.addEventListener('click', (e) => {
+
+//   var email = document.getElementById("email").value;
+//   var password = document.getElementById("password").value;
+
+//   signInWithEmailAndPassword(auth, email, password)
+//     .then((userCredential) => {
+//     // Signed in 
+//     const user = userCredential.user;
+//     alert("Welcome : " + user.email + "! Now You Can Access Our Files!");
+//     window.location.href = "dashboard/home.html";
+//     // ...
+//     })
+//     .catch((error) => {
+//     const errorCode = error.code;
+//     const errorMessage = error.message;
+
+//   //add an alert for errors
+//   alert(errorMessage);
+//     });
+// });

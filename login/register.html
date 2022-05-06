@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login To Sdg Cloud Server</title>
+	<title>Register With Sdg Cloud Server</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -32,7 +32,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form validate-form">
+				<form class="login100-form validate-form" onsubmit="sendEmail();return false;" >
 					<span class="login100-form-title p-b-26">
 						Welcome
 					</span>
@@ -40,6 +40,16 @@
 						<i class="zmdi zmdi-font"></i>
 					</span> -->
 					<center><img src="images/icontr.png" alt="logo" width="100px" height="100px"></center><br>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input class="input100" id="name" type="text" name="name">
+						<span class="focus-input100" data-placeholder="Full Name"></span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Valid Number is a 10 digit number">
+						<input class="input100" id="mobile" type="tel" name="mobile">
+						<span class="focus-input100" data-placeholder="Mobile No. With Country Code"></span>
+					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
 						<input class="input100" id="email" type="text" name="email">
@@ -57,8 +67,8 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn" id="signIn">
-								Login
+							<button type="submit" class="login100-form-btn" id="signUp">
+								Register
 							</button>
 						</div>
 					</div>
@@ -72,11 +82,11 @@
 					</div><br>
 					<p>
 						<span class="txt1">
-							New User? |
+							Existing User? |
 						</span>
 
-						<a class="txt2" href="register.html">
-							Create An Account From Here.
+						<a class="txt2" href="login.html">
+							Login From Here.
 						</a>
 					</p>
 					<div class="text-center p-t-30">
@@ -88,7 +98,7 @@
 							Sdg Cloud Server
 						</a>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -112,6 +122,8 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/regmail.js"></script>
 	<script type="module" src="js/login.js"></script>
 </body>
 </html>
