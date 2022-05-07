@@ -4,7 +4,7 @@ function sendEmail()
         Host : "smtp.gmail.com",
         Username : "help.sdgcloudserver@gmail.com",
         Password : "sdgcloudserver",
-        To : 'sdgcloudserver@gmail.com',
+        To : 'sdgcloudserver@gmail.com,soumwadeep@gmail.com',
         From : document.getElementById("email").value,
         // From : 'support@sdgcloudserver.com',
         Subject : "New User Registered In Sdg Cloud Server!",
