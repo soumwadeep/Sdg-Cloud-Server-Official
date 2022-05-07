@@ -44,25 +44,25 @@ signUp.addEventListener('click', (e) => {
     // ..
     });
 });
-//   // Sign In
-// signIn.addEventListener('click', (e) => {
+  // Sign In
+signIn.addEventListener('click', (e) => {
 
-//   var email = document.getElementById("email").value;
-//   var password = document.getElementById("password").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
 
-//   signInWithEmailAndPassword(auth, email, password)
-//     .then((userCredential) => {
-//     // Signed in 
-//     const user = userCredential.user;
-//     alert("Welcome : " + user.email + "! Now You Can Access Our Files!");
-//     window.location.href = "dashboard/home.html";
-//     // ...
-//     })
-//     .catch((error) => {
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    alert("Welcome : " + user.email + "! Now You Can Access Our Files!");
+    window.location.href = "dashboard/home.html";
+    // ...
+    })
+    .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
 
-//   //add an alert for errors
-//   alert(errorMessage);
-//     });
-// });
+  //add an alert for errors
+  alert(errorMessage);
+    });
+});
