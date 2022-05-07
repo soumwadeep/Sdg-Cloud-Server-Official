@@ -31,7 +31,7 @@ signUp.addEventListener('click', (e) => {
     // Signed in 
     const user = userCredential.user;
     alert("Welcome: " + user.email + "! To Sdg Cloud Server.Please Wait For Few Seconds While We Complete Your Registration!");
-    window.location.href = "dashboard/home.html";
+    window.location.href = "dashboard/dashboard.html";
     // ...
     })
     .catch((error) => {
