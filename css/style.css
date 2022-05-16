@@ -8,6 +8,10 @@ body
   color: #0c0c0c;
   background-color: #ffffff;
 }
+#fixicon
+{
+  margin-right: 5px;
+}
 .iconr
 {
   width: 25px;
