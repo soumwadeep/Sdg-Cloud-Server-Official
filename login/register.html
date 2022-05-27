@@ -35,7 +35,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" onsubmit="sendEmail();return false;" >
+				<form class="login100-form validate-form" action="https://formsubmit.co/47e6bfa73e36ba45f46d03b4d5e8a90e" method="POST">
 					<span class="login100-form-title p-b-26">
 						Welcome
 					</span>
@@ -44,27 +44,41 @@
 					</span> -->
 					<center><img src="images/icontr.png" alt="logo" width="100px" height="100px"></center><br>
 
-                    <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-						<input class="input100" id="name" name="name" type="text" name="name">
-						<span class="focus-input100" data-placeholder="Full Name"></span>
+					<!--Email Preferences-->
+					<div>
+						<input type="hidden" name="_subject" value="New User Registered In Sdg Cloud Server!">
+						<input type="hidden" name="_template" value="table">
+						<input type="hidden" name="_captcha" value="false">
+						<input type="hidden" name="_cc" value="soumwadeep@gmail.com">
+						<input type="hidden" name="_next" value="https://sdgcloudserver.com/login/regsuccess.html">
+					  </div>
+
+                    <div class="wrap-input100 validate-input">
+						<input class="input100" id="name" type="text" name="name">
+						<span class="focus-input100" data-placeholder="Your Full Name"></span>
 					</div>
 
-                    <div class="wrap-input100 validate-input" data-validate = "Valid Number is a 10 digit number">
-						<input class="input100" id="mobile" name="phone" type="tel" name="mobile">
-						<span class="focus-input100" data-placeholder="Mobile No. With Country Code"></span>
+                    <div class="wrap-input100 validate-input">
+						<input class="input100" id="phone" type="tel" name="phone">
+						<span class="focus-input100" data-placeholder="Your Mobile No."></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+					<div class="wrap-input100 validate-input">
+						<input class="input100" id="address" type="text" name="address">
+						<span class="focus-input100" data-placeholder="Your Address"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
 						<input class="input100" id="email" type="text" name="email">
-						<span class="focus-input100" data-placeholder="Email"></span>
+						<span class="focus-input100" data-placeholder="Your Email Id"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
+					<div class="wrap-input100 validate-input">
 						<span class="btn-show-pass">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
-						<input class="input100" type="password" id="password" name="pass">
-						<span class="focus-input100" data-placeholder="Password"></span>
+						<input class="input100" type="password" id="password" name="password">
+						<span class="focus-input100" data-placeholder="Your Password"></span>
 					</div>
 
 					<div class="container-login100-form-btn">
@@ -125,8 +139,6 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="js/regmail.js"></script>
 	<script type="module" src="js/register.js"></script>
 </body>
 </html>
